@@ -3,6 +3,7 @@ import React from "react"
 import { Global } from "@emotion/core"
 import { jsx } from "theme-ui"
 import SEO from "./seo"
+import Particles from "../components/particles"
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -40,7 +41,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
       })}
     />
     <SEO />
-    <main className={className}>{children}</main>
+    <main className={className}>{children}<Particles /></main><Particles />
   </React.Fragment>
 )
 
